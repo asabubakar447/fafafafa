@@ -1,0 +1,341 @@
+/* Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap');
+
+
+/* Global Css*/
+*
+body{
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lato', sans-serif;
+    color: #2d3950;
+    margin: 0px;
+}
+p{
+    color: #5f6470;
+}
+a{
+    text-decoration: none; 
+}
+
+
+/*=======================
+    Header Section
+==========================*/
+header{
+    padding: 20px 0;
+}
+header img{
+    width: 140px;
+}
+
+/*=======================
+    Header Section
+==========================*/
+.banner-section{
+    background: url(../images/banner-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0 0;
+}
+.banner-section h2{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.banner-section .title-separetor{
+    height: 2px;
+    width: 56%;
+    background: rgb(41, 134, 198);
+    margin: 15px auto 28px;
+}
+.banner-section p{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+}
+.banner-section .btn-action{
+    border: 1px solid #15a4fa;
+    border-radius: 2px;
+    color: white;
+    padding: 16px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    width: 225px;
+    transition: all 0.3s ease-in-out;
+}
+.banner-section .btn-action:hover{
+    background: #15a4fa;
+
+}
+.banner-section .fa-chevron-down{
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 100px 0 50px;
+} 
+
+/*=======================
+    About Section CSS
+==========================*/
+.about-section{
+    background: #f6f9f9;
+    padding: 70px 0;
+    text-align: center;
+}
+.about-section h2{
+    font-size: 40px;
+    margin-bottom: 22px;
+}
+.about-section p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/*=======================
+    Feature Section CSS
+==========================*/
+.feature-section{
+    padding: 60px 0;
+    margin: 0px;
+}
+.feature-section img{
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.feature-section h2{
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.feature-section p{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/*=======================
+   Gallery Section CSS
+==========================*/
+.gallery-section{
+    background: #f6f9f9;
+    padding: 80px 0 100px;
+}
+.gallery-section h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.gallery-section p{
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 80px
+}
+
+/* Gallery Items*/
+.item-box{
+    position: relative;
+    overflow: hidden;
+}
+.item-box img{
+    width: 100%
+}
+.item-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 143, 220, .8);
+    top: 0px;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+.item-box:hover .item-hover{
+    left: 0%;
+}
+.item-hover ul{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 30%;
+}
+.item-hover ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+}
+.item-hover ul li i{
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.gallery-section .second-page{
+    padding-top: 30px;
+}
+
+/*=======================
+  Subscription Section CSS
+==========================*/
+.subscription{
+    background: url(../images/subscription-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0 120px;
+}
+.subscription h2{
+    color: white;
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+}
+.subscription p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0 30px;
+}
+.subscription form .form-control{
+    background: transparent;
+    color: white;
+    height: 50px;
+    margin: 20px 0px;
+    border-radius: 3px;
+    border: 1.5px solid #999999;
+}
+.subscription form .form-msg{
+    background: transparent;
+    color: white;
+    height: 130px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1.5px solid #999999;
+}
+.check-box{
+    margin: 0 14px;
+}
+.btn-send{
+    float: right;
+    padding: 10px 50px;
+    background: transparent;
+    border: 1px solid #226fa3;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+    border-radius: 2px;
+}
+.btn-submit label{
+    color: white;
+    padding-top: 10px;
+}
+.btn-send:hover{
+    background: #226fa3;
+    color:white;
+}
+.btn-submit .check-box{
+    padding: 20px 5px;
+    margin: 0px;
+}
+
+/*=======================
+   Footer Section CSS
+==========================*/
+.footer-bg{
+    padding: 30px 0;
+    margin: 0px;
+}
+.footer-bg h3{
+    padding-top: 4px;
+    color: #999999;
+    font-size: 18px;
+}
+.footer-bg ul{
+    margin: 0px;
+}
+.footer-bg ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 3px;
+    float: right;
+}
+.footer-bg ul li i{
+    background: transparent;
+    color: #15a4fa;
+    border: 1px solid #15a4fa;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.footer-bg ul li i:hover{
+    background: #15a4fa;
+    color: white;
+}
+
+
+/*=======================
+   Media Quarey
+==========================*/
+
+/* For Nootbook Version */
+@media (min-width: 769px) and (max-width: 990px){
+
+}
+
+/* For Tablet Version */
+@media (min-width: 577px) and (max-width: 768px){
+
+}
+
+/* For Mobiel Version */
+@media (min-width: 320px) and (max-width: 576px){
+    header img {width: 120px;}
+    .banner-section{padding: 40px 0 0;}
+    .banner-section h2{font-size: 50px;}
+    .banner-section .title-separetor{width: 90%; margin: 15px auto 16px;}
+    .banner-section p {font-weight: 400; font-size: 14px;}
+    .banner-section .btn-action {padding: 11px 4px; width: 135px;font-size: 14px;}
+    .banner-section .fa-chevron-down{font-size: 14px; margin: 80px 0 50px;}
+    .about-section{padding: 30px 0;}
+    .about-section h2 {font-size: 28px; margin-bottom: 10px;}
+    .about-section p {font-size: 14px; letter-spacing: 1px; line-height: 24px;}
+    .feature-section {padding: 40px 0 20px 0;}
+    .feature-section img{width: 90px;}
+    .feature-section h2{padding-bottom: 12px; font-size: 20px;}   
+    .feature-section p{font-size: 13px; padding-bottom: 10px;} 
+    .gallery-section{padding: 30px 0 50px;}
+    .gallery-section h2{font-size: 26px; margin-bottom: 12px;}
+    .gallery-section p{font-size: 16px; line-height: 14px; margin-bottom: 44px;}
+    .item-box{padding: 10px;}
+    .subscription{padding: 36px 0 40px;}
+    .subscription h2{font-size: 40px;}
+    .subscription p{font-size: 14px; padding: 10px 0 0;}
+    .subscription form .form-control{height: 40px; margin: 10px 0px;}
+    .btn-send{float: none; display: block; margin: 0 auto;}
+    .btn-submit label{padding-bottom: 10px;}
+    .footer-bg{padding: 24px 0;}
+    .footer-bg h3{padding-top: 0px; font-size: 16px; text-align: center;}
+    .footer-bg ul li {float: none; text-align: center;}
+    .mobile{text-align: center; padding-right: 43px; padding-top: 15px;}
+    .footer-bg ul li i{width: 30px; height: 30px; line-height: 30px; font-size: 15px}
+}
